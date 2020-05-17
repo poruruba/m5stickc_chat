@@ -259,7 +259,7 @@ void loop() {
       Serial.printf("0100");                            // チャンネル数
       Serial.printf("%08lx", htonl(SAMPLING_RATE));     // サンプリングレート
       Serial.printf("%08lx", htonl(SAMPLING_RATE));     // バイト／秒
-      Serial.printf("0200");                            // ブロック境界
+      Serial.printf("0100");                            // ブロック境界
       Serial.printf("0800");                            // ビット／サンプル
       Serial.printf("64617461");                        // dataチャンク
       Serial.printf("%08lx", htonl(recPos));            // 総データサイズ
