@@ -107,7 +107,7 @@ async function speech_to_wave(message){
 				console.log(err);
 				return reject(err);
 			}
-			var buffer = new Buffer(data.AudioStream);
+			var buffer = Buffer.from(data.AudioStream);
 			return resolve(buffer);
 		});
 	});
